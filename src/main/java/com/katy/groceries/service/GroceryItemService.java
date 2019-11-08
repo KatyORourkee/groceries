@@ -17,4 +17,12 @@ public class GroceryItemService implements IGroceryItemService{
 
         return groceryItems;
     }
+
+    @Override
+    public GroceryItem add(GroceryItem groceryItem) {
+        GroceryItem newItem = new GroceryItem(groceryItem.getName() + " Added");
+        return newItem;
+    }
+
+
 }
