@@ -32,20 +32,20 @@ This is a Java Spring Boot app using Maven. It uses Spring Boot 2, Java 1.8, and
 ### To run...
 Navigate to the directory you want to clone the repo to
 
-`\> cd directory-to-clone-to`
+`> cd directory-to-clone-to`
 
 Clone this repository to your directory 
 
-`\> git clone https://github.com/KatyORourkee/groceries.git` 
+`> git clone https://github.com/KatyORourkee/groceries.git` 
 
 Navigate into grocery-app
 
-`\> cd groceries`
+`> cd groceries`
 
 Run the app 
 
-`\> mvn spring-boot:run`
-...
+`> mvn spring-boot:run`
+
 ### API Spec 
 Once the app is running locally on http://localhost:8080, you can find the Swagger documentation here:
 http://localhost:8080/swagger-ui.html
