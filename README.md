@@ -4,7 +4,7 @@
 Discover your favorite and most cost-effective meals so that you can eat well, shop smart, and stay within your grocery budget. 
 
 ## Feature Ideas  
-Below is a brain dump of how this app is meant to be implemented. All of these features are not implemented yet.
+Here are some features I am planning to implement. 
 
 ### Your Pantry 
 A virtual representation of all of the grocery items in your house. Start by filling your app's pantry with the food you already have. Make sure to include all items from your fridge, cupboards, your actual pantry, etc. In order to benefit from the cost-conscious parts of the app, you are required to enter the cost of each item. You may not remember the exact cost of each item, but make your best guess. Eventually, these items will get used up (or thrown away) and replaced with items you enter into the app right after you buy them (you'll have a more accurate cost then). 
@@ -24,7 +24,7 @@ When you throw something away, enter it into the app. You can see how much you s
 Now that you have your "pantry" of items, when you eat something, select what you ate and how much. The app will tell you how much that meal or snack costs. This will also update your pantry to reflect how much of each item is left. 
 
 ## Release Notes 
-
+No releases to production yet.
 
 ## Technical details 
 This is a Java Spring Boot app using Maven. It uses Spring Boot 2, Java 1.8, and Maven 3.6.2
@@ -39,6 +39,9 @@ Clone this repository to your directory
 Navigate into grocery-app
 \> cd groceries
 
-Run the Spring Boot app
+Run the app 
+\> mvn spring-boot:run
 ...
 ### API Spec 
+Once the app is running locally on http://localhost:8080, you can find the Swagger documentation here:
+http://localhost:8080/swagger-ui.html
