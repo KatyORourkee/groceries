@@ -5,7 +5,6 @@ import com.katy.groceries.repository.IGroceryItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -16,7 +15,7 @@ public class GroceryItemService implements IGroceryItemService{
 
     @Override
     public List<GroceryItem> getAll() {
-        List<GroceryItem> groceryItems = new ArrayList<GroceryItem>();
+        List<GroceryItem> groceryItems;
         groceryItems = repo.findAll();
 
         return groceryItems;
@@ -24,9 +23,7 @@ public class GroceryItemService implements IGroceryItemService{
 
     @Override
     public GroceryItem add(GroceryItem groceryItem) {
-        repo.save(groceryItem);
-        return new GroceryItem("Added " + groceryItem.getName());
+        GroceryItem savedItem = repo.save(groceryItem);
+        return savedItem;
     }
-
-
 }
