@@ -1,9 +1,18 @@
 package com.katy.groceries.model;
 
+import javax.persistence.*;
 import java.util.Objects;
 
+/*
+* Add @Data annotation from Lombok to handle
+* getters, setters, toString, hash, and equals
+* methods
+*/
+@Entity
+@Table(name = "groceryItems")
 public class GroceryItem {
 
+    private long id;
     private String name;
 
     public GroceryItem() {
@@ -13,6 +22,16 @@ public class GroceryItem {
         this.setName(name);
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    public long getId() {
+        return id;
+    }
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    @Column(name = "name", nullable = false)
     public String getName() {
         return name;
     }
