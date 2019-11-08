@@ -69,11 +69,14 @@ This issue can be considered complete when:
 
 - Valuable unit tests are written for each class
 - Valuable integration tests are written for end-to-end functionality and cross-layer functionality
+
 -- Controller -> Service
+
 -- Service -> Repository
 
 ### Upcoming Issues
 Issue 1:
+
 *What*
 
 Implement an alternative solution for storing database connection details.
@@ -98,6 +101,7 @@ The README is updated to reflect new instructions for setting up and running the
 
 
 Issue 2:
+
 *As a* grocery shopper
 
 *I can* add a grocery item to the Groceries app
@@ -115,6 +119,7 @@ This issue can be considered complete when...
 - Grocery item name cannot be empty or white space
 - Grocery item name is trimmed of leading and trailing white space before being stored
 - Grocery input field is properly sanitized and validated to protect against potential OWASP attacks
+
 -- SQL Injection, Cross-Site Scripting, etc.
 
 *Definition of Done*
