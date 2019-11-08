@@ -93,11 +93,15 @@ Currently, the database connection details (including username and password) are
 
 This issue can be considered complete when:
 
-The database connection details are stored in a location that allows for:
+- The database connection details are stored in a location that allows for:
+
 -- Local and production database details to be used automatically based on the environment
+
 -- Database connection details are hidden and securely stored
+
 -- Multiple developers can collaborate easily on the project without having to exclude developer-specific database connection details from commits
-The README is updated to reflect new instructions for setting up and running the project specifically for how to set database connection details
+
+- The README is updated to reflect new instructions for setting up and running the project specifically for how to set database connection details
 
 
 Issue 2:
