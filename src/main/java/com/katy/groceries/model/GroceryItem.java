@@ -18,7 +18,9 @@ public class GroceryItem {
     public GroceryItem() {
     }
 
-    public GroceryItem(String name) {
+    public GroceryItem(long id, String name)
+    {
+        this.setId(id);
         this.setName(name);
     }
 
@@ -27,6 +29,10 @@ public class GroceryItem {
     public long getId() {
         return id;
     }
+
+    // If the ID is generated, do we want to
+    // make this private and remove it from
+    // the ctx?
     public void setId(long id) {
         this.id = id;
     }
@@ -37,7 +43,6 @@ public class GroceryItem {
     }
 
     public void setName(String name) {
-        // name validation here
         this.name = name;
     }
 
@@ -56,8 +61,11 @@ public class GroceryItem {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Grocery Item: ");
-        sb.append(", name='").append(name);
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"name\":\"").append(name).append("\",");
+        sb.append("\"id\":").append(id);
+        sb.append("}");
+
         return sb.toString();
     }
 }
