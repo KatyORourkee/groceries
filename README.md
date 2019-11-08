@@ -73,6 +73,7 @@ This issue can be considered complete when:
 -- Service -> Repository
 
 ### Upcoming Issues
+Issue 1:
 *What*
 
 Implement an alternative solution for storing database connection details.
@@ -95,8 +96,8 @@ The database connection details are stored in a location that allows for:
 -- Multiple developers can collaborate easily on the project without having to exclude developer-specific database connection details from commits
 The README is updated to reflect new instructions for setting up and running the project specifically for how to set database connection details
 
-AND
 
+Issue 2:
 *As a* grocery shopper
 
 *I can* add a grocery item to the Groceries app
