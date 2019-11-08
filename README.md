@@ -4,7 +4,6 @@
 Discover your favorite and most cost-effective meals so that you can eat well, shop smart, and stay within your grocery budget. 
 
 ## Feature Ideas  
-Here are some features I am planning to implement. 
 
 ### Your Pantry 
 A virtual representation of all of the grocery items in your house. Start by filling your app's pantry with the food you already have. Make sure to include all items from your fridge, cupboards, your actual pantry, etc. In order to benefit from the cost-conscious parts of the app, you are required to enter the cost of each item. You may not remember the exact cost of each item, but make your best guess. Eventually, these items will get used up (or thrown away) and replaced with items you enter into the app right after you buy them (you'll have a more accurate cost then). 
@@ -38,6 +37,8 @@ Clone this repository to your directory
 
 `> git clone https://github.com/KatyORourkee/groceries.git` 
 
+TODO: Add a step here to update application.settings with user's local SQL database connection details. Next step is to move those connection details to a more appropriate and secure place (environment variables?). 
+
 Navigate into grocery-app
 
 `> cd groceries`
@@ -49,3 +50,88 @@ Run the app
 ### API Spec 
 Once the app is running locally on http://localhost:8080, you can find the Swagger documentation here:
 http://localhost:8080/swagger-ui.html
+
+## Current and Upcoming Work
+I am using ZenHub to track my user stories and tasks, but here are a couple examples of current and upcoming work:
+
+### Current Issue
+*What*
+
+Finish writing unit and integration tests for the initial set of code currently implemented.
+
+*Why*
+
+Unit and integration tests should be written alongside (ideally TDD) implementation of functionality. That was not done as a part of getting the first couple endpoints up and running, so it is important to complete the missing unit and integration tests to enable writing new tests alongside new implementation without falling behind.
+
+*AC*
+
+This issue can be considered complete when:
+
+- Valuable unit tests are written for each class
+- Valuable integration tests are written for end-to-end functionality and cross-layer functionality
+
+-- Controller -> Service
+
+-- Service -> Repository
+
+### Upcoming Issues
+Issue 1:
+
+*What*
+
+Implement an alternative solution for storing database connection details.
+
+*Why*
+
+Currently, the database connection details (including username and password) are stored in the application.settings file which is checked into github. This is problematic because...
+
+- Anyone who looks at this file in github can see my database connection and authentication details
+- Checking these details into github makes it difficult for more than one person to collaborate on this project, as each person will have their own local database connection details and will always need to exclude them from commits
+- We need a more production-ready solution to hide production database connection details when we are ready to deploy to production
+
+*AC*
+
+This issue can be considered complete when:
+
+- The database connection details are stored in a location that allows for:
+
+-- Local and production database details to be used automatically based on the environment
+
+-- Database connection details are hidden and securely stored
+
+-- Multiple developers can collaborate easily on the project without having to exclude developer-specific database connection details from commits
+
+- The README is updated to reflect new instructions for setting up and running the project specifically for how to set database connection details
+
+
+Issue 2:
+
+*As a* grocery shopper
+
+*I can* add a grocery item to the Groceries app
+
+*So that* I can fill my virtual pantry with a list of grocery items that I have
+
+*AC*
+
+This issue can be considered complete when...
+
+- A user of the app is able to add a grocery item via the UI that is successfully stored in the database
+- The user sees the new grocery item in their pantry when they view all grocery items
+- Grocery item name accepts letters and numbers only
+- Grocery item name accepts a maximum of 50 characters
+- Grocery item name cannot be empty or white space
+- Grocery item name is trimmed of leading and trailing white space before being stored
+- Grocery input field is properly sanitized and validated to protect against potential OWASP attacks
+
+-- SQL Injection, Cross-Site Scripting, etc.
+
+*Definition of Done*
+
+- OOP and Clean Coding standards have been met
+- Code base is left in a cleaner state than before the changes
+- Valuable unit and integration tests are written for all changes
+- User help documentation is updated
+- Update is added to release notes
+- Update has been tested as a user
+- Update is fully deployed to production
