@@ -37,6 +37,8 @@ Clone this repository to your directory
 
 `> git clone https://github.com/KatyORourkee/groceries.git` 
 
+TODO: Add a step here to update application.settings with user's local SQL database connection details. Next step is to move those connection details to a more appropriate and secure place (environment variables?). 
+
 Navigate into grocery-app
 
 `> cd groceries`
