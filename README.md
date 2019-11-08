@@ -1,4 +1,4 @@
-# Grocery App 
+# Groceries 
 
 ## Vision
 Discover your favorite and most cost-effective meals so that you can eat well, shop smart, and stay within your grocery budget. 
