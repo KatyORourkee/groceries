@@ -53,30 +53,9 @@ Once the app is running locally on http://localhost:8080, you can find the Swagg
 http://localhost:8080/swagger-ui.html
 
 ## Current and Upcoming Work
-I am using ZenHub to track my user stories and tasks, but here are a couple examples of current and upcoming work:
+I am using ZenHub to track my user stories and tasks. To take a look at the open issues for this repo, look at the Issues tab above. Below are a couple examples (one technical task, one user story). 
 
-### Current Issue
-*What*
-
-Finish writing unit and integration tests for the initial set of code currently implemented.
-
-*Why*
-
-Unit and integration tests should be written alongside (ideally TDD) implementation of functionality. That was not done as a part of getting the first couple endpoints up and running, so it is important to complete the missing unit and integration tests to enable writing new tests alongside new implementation without falling behind.
-
-*AC*
-
-This issue can be considered complete when:
-
-- Valuable unit tests are written for each class
-- Valuable integration tests are written for end-to-end functionality and cross-layer functionality
-
--- Controller -> Service
-
--- Service -> Repository
-
-### Upcoming Issues
-Issue 1:
+Issue 1 (Technical Task):
 
 *What*
 
@@ -96,16 +75,16 @@ This issue can be considered complete when:
 
 - The database connection details are stored in a location that allows for:
 
--- Local and production database details to be used automatically based on the environment
+   -- Local and production database details to be used automatically based on the environment
 
--- Database connection details are hidden and securely stored
+   -- Database connection details are hidden and securely stored
 
--- Multiple developers can collaborate easily on the project without having to exclude developer-specific database connection details from commits
+   -- Multiple developers can collaborate easily on the project without having to exclude developer-specific database connection details from commits
 
 - The README is updated to reflect new instructions for setting up and running the project specifically for how to set database connection details
 
 
-Issue 2:
+Issue 2 (User Story):
 
 *As a* grocery shopper
 
@@ -125,7 +104,7 @@ This issue can be considered complete when...
 - Grocery item name is trimmed of leading and trailing white space before being stored
 - Grocery input field is properly sanitized and validated to protect against potential OWASP attacks
 
--- SQL Injection, Cross-Site Scripting, etc.
+   -- SQL Injection, Cross-Site Scripting, etc.
 
 *Definition of Done*
 
