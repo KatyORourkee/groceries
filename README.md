@@ -4,7 +4,6 @@
 Discover your favorite and most cost-effective meals so that you can eat well, shop smart, and stay within your grocery budget. 
 
 ## Feature Ideas  
-Here are some features I am planning to implement. 
 
 ### Your Pantry 
 A virtual representation of all of the grocery items in your house. Start by filling your app's pantry with the food you already have. Make sure to include all items from your fridge, cupboards, your actual pantry, etc. In order to benefit from the cost-conscious parts of the app, you are required to enter the cost of each item. You may not remember the exact cost of each item, but make your best guess. Eventually, these items will get used up (or thrown away) and replaced with items you enter into the app right after you buy them (you'll have a more accurate cost then). 
