@@ -27,6 +27,7 @@ No releases to production yet.
 
 ## Technical details 
 This is a Java Spring Boot app using Maven. It uses Spring Boot 2, Java 1.8, and Maven 3.6.2
+A rough draft of the models involved can be found here https://docs.google.com/document/d/14JCB_lQ-PzybqyYZPS9yeOBbveMhhiX7nW3A4XK2qGo/edit?usp=sharing 
 
 ### To run...
 Navigate to the directory you want to clone the repo to
