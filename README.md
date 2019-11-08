@@ -84,6 +84,8 @@ This issue can be considered complete when:
 - The README is updated to reflect new instructions for setting up and running the project specifically for how to set database connection details
 
 
+
+
 Issue 2 (User Story):
 
 *As a* grocery shopper
