@@ -56,12 +56,15 @@ I am using ZenHub to track my user stories and tasks, but here are a couple exam
 
 ### Current Issue
 *What*
+
 Finish writing unit and integration tests for the initial set of code currently implemented.
 
 *Why*
+
 Unit and integration tests should be written alongside (ideally TDD) implementation of functionality. That was not done as a part of getting the first couple endpoints up and running, so it is important to complete the missing unit and integration tests to enable writing new tests alongside new implementation without falling behind.
 
 *AC*
+
 This issue can be considered complete when:
 
 - Valuable unit tests are written for each class
@@ -71,9 +74,11 @@ This issue can be considered complete when:
 
 ### Upcoming Issues
 *What*
+
 Implement an alternative solution for storing database connection details.
 
 *Why*
+
 Currently, the database connection details (including username and password) are stored in the application.settings file which is checked into github. This is problematic because...
 
 - Anyone who looks at this file in github can see my database connection and authentication details
@@ -81,6 +86,7 @@ Currently, the database connection details (including username and password) are
 - We need a more production-ready solution to hide production database connection details when we are ready to deploy to production
 
 *AC*
+
 This issue can be considered complete when:
 
 The database connection details are stored in a location that allows for:
@@ -92,10 +98,13 @@ The README is updated to reflect new instructions for setting up and running the
 AND
 
 *As a* grocery shopper
+
 *I can* add a grocery item to the Groceries app
+
 *So that* I can fill my virtual pantry with a list of grocery items that I have
 
 *AC*
+
 This issue can be considered complete when...
 
 - A user of the app is able to add a grocery item via the UI that is successfully stored in the database
@@ -108,6 +117,7 @@ This issue can be considered complete when...
 -- SQL Injection, Cross-Site Scripting, etc.
 
 *Definition of Done*
+
 - OOP and Clean Coding standards have been met
 - Code base is left in a cleaner state than before the changes
 - Valuable unit and integration tests are written for all changes
