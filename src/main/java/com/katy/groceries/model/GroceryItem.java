@@ -62,8 +62,8 @@ public class GroceryItem {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("{");
-        sb.append("\"name\":\"").append(name).append("\",");
-        sb.append("\"id\":").append(id);
+        sb.append("\"id\":").append(id).append(",");
+        sb.append("\"name\":\"").append(name).append("\"");
         sb.append("}");
 
         return sb.toString();
