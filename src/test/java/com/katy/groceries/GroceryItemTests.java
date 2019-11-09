@@ -110,7 +110,7 @@ public class GroceryItemTests {
 
     @Test
     public void toString_PrintsInJsonFormat() {
-        String expected = "{\"id\":1,\"name\":\"toothpaste\"}";
+        String expected = "GroceryItem(id=1, name=toothpaste)";
         GroceryItem sut = new GroceryItem(1, "toothpaste");
 
         assertTrue(expected.equals(sut.toString()),
@@ -121,7 +121,7 @@ public class GroceryItemTests {
 
     @Test
     public void toString_DefaultProperties() {
-        String expected = "{\"id\":0,\"name\":\"null\"}";
+        String expected = "GroceryItem(id=0, name=null)";
         GroceryItem sut = new GroceryItem();
 
         assertTrue(expected.equals(sut.toString()),
