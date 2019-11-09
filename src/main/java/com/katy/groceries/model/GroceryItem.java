@@ -19,9 +19,8 @@ public class GroceryItem {
     public GroceryItem() {
     }
 
-    public GroceryItem(long id, String name)
+    public GroceryItem(String name)
     {
-        this.id = id;
         this.name = name;
     }
 }

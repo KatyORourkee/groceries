@@ -1,6 +1,7 @@
 package com.katy.groceries.controller;
 
 import com.katy.groceries.model.GroceryItem;
+import com.katy.groceries.model.GroceryItemCreationDto;
 import com.katy.groceries.service.IGroceryItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -24,7 +25,10 @@ public class GroceryItemController {
     }
 
     @PostMapping(value="/groceryItem", produces = MediaType.APPLICATION_JSON_VALUE)
-    public GroceryItem create(@RequestBody GroceryItem groceryItem) {
-        return groceryItemService.add(groceryItem);
+    public GroceryItem create(@RequestBody GroceryItemCreationDto groceryItem) {
+        // replace this with a mapper
+        GroceryItem newGroceryItem = new GroceryItem(groceryItem.getName());
+
+        return groceryItemService.add(newGroceryItem);
     }
 }
