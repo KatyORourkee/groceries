@@ -17,13 +17,13 @@ public class GroceryItemController {
     private IGroceryItemService groceryItemService;
 
     @GetMapping(value="/groceryItem")
-    public List<GroceryItem> getGroceryItems() {
+    public List<GroceryItem> list() {
         List<GroceryItem> groceryItems = groceryItemService.getAll();
         return groceryItems;
     }
 
     @PostMapping(value="/groceryItem")
-    public GroceryItem createGroceryItem(@RequestBody GroceryItem groceryItem) {
+    public GroceryItem create(@RequestBody GroceryItem groceryItem) {
         return groceryItemService.add(groceryItem);
     }
 }
